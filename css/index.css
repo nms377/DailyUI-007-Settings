@@ -9,8 +9,9 @@ body {
 	display: flex;
 	flex-flow: column wrap;
 	align-items: center;
-	padding-bottom: 5rem;
 	width: 500px;
+	padding-bottom: 5rem;
+	border: 2px solid black;
 }
 
 #header {
