@@ -11,7 +11,11 @@ body {
 	align-items: center;
 	padding-bottom: 5rem;
 	width: 500px;
-	border: 2px solid black;
+}
+
+#header {
+	text-transform: uppercase;
+	margin: 2rem 0;
 }
 
 .boxes {
