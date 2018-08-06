@@ -1,8 +1,47 @@
+body {
+	display: flex;
+	justify-content: center;
+	margin: 4rem 0 0 0;
+	padding: 0;
+}
+
+#settings {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	padding-bottom: 5rem;
+	width: 500px;
+	border: 2px solid black;
+}
+
+.boxes {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	justify-items: center;
+	align-items: center;
+	grid-column-gap: 1rem;
+	width: 50%;
+	margin: 1rem 0 0 0;
+}
+
+.setOne {
+	margin-top: 0;
+}
+
+.settingLabel {
+	grid-column: 1/2;
+	margin: 0;
+	/*font-weight: bold;*/
+}
+
 .switch {
+	grid-column: 2/3;
 	position: relative;
 	display: inline-block;
 	width: 60px;
 	height: 34px;
+	margin: 0;
 }
 
 .switch input {
@@ -34,11 +73,11 @@
 }
 
 input:checked + .slider {
-	background-color: #2196F3;
+	background-color: rgb(50,205,50);
 }
 
 input:focus + .slider {
-	box-shadow: 0 0 1px #2196F3;
+	box-shadow: 0 0 1px rgb(50,205,50);
 }
 
 input:checked + .slider:before {
